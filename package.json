@@ -19,5 +19,6 @@
     "README.md",
     "public",
     "src"
-  ]
+  ],
+  "repository": "https://github.com/origami-z/modular-template-uitk-app.git"
 }
