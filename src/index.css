@@ -1,5 +1,11 @@
+@import '@jpmorganchase/uitk-theme/index.css' layer;
+
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+div#root {
+  height: 100vh;
 }
