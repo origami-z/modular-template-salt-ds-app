@@ -47,12 +47,12 @@ const App = () => {
         <Panel>
           <Card>
             <h1>
-              <Button onClick={() => setCount((x) => x + 1)}>
-                <AddIcon />
-              </Button>{' '}
-              Counter {count}{' '}
               <Button onClick={() => setCount((x) => x - 1)}>
                 <RemoveIcon />
+              </Button>{' '}
+              Counter {count}{' '}
+              <Button onClick={() => setCount((x) => x + 1)}>
+                <AddIcon />
               </Button>
             </h1>
           </Card>
