@@ -25,7 +25,7 @@ export const Nav = ({
 }: {
   onThemeChange?: (theme: 'light' | 'dark') => void;
   theme?: 'light' | 'dark';
-}) => {
+}): JSX.Element => {
   const handleChange: ToggleButtonGroupChangeEventHandler = (
     event,
     index,

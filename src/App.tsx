@@ -6,7 +6,7 @@ import { Nav } from './components/Nav';
 
 import './App.css';
 
-const App = () => {
+const App = (): JSX.Element => {
   const [selectedTheme, setSelectedTheme] = React.useState<'light' | 'dark'>(
     'light',
   );
