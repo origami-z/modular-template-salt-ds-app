@@ -1,6 +1,6 @@
 {
   "name": "modular-template-uitk-app",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "exports": {
     "./package.json": "./package.json"
   },
