@@ -1,23 +1,23 @@
-import { Button, Card, Panel, ToolkitProvider } from "@jpmorganchase/uitk-core";
-import { AddIcon, RemoveIcon } from "@jpmorganchase/uitk-icons";
-import { Link } from "@jpmorganchase/uitk-lab";
+import { Button, Link, SaltProvider } from "@salt-ds/core";
+import { AddIcon, RemoveIcon } from "@salt-ds/icons";
+import { Card, Panel } from "@salt-ds/lab";
 import * as React from "react";
 import { Nav } from "./components/Nav";
 
 import "./App.css";
 
 const App = (): JSX.Element => {
-  const [selectedTheme, setSelectedTheme] = React.useState<"light" | "dark">(
+  const [selectedMode, setSelectedMode] = React.useState<"light" | "dark">(
     "light"
   );
 
   const [count, setCount] = React.useState(0);
   return (
-    <ToolkitProvider theme={selectedTheme}>
+    <SaltProvider mode={selectedMode} applyClassesTo="root">
       <div className="App">
         <Nav
-          theme={selectedTheme}
-          onThemeChange={(newTheme) => setSelectedTheme(newTheme)}
+          theme={selectedMode}
+          onThemeChange={(newTheme) => setSelectedMode(newTheme)}
         />
         <Panel>
           <Card>
@@ -27,16 +27,13 @@ const App = (): JSX.Element => {
         <Panel>
           <Card>
             <h2>
-              Check UITK's{" "}
-              <Link
-                href="https://ui-toolkit-staging.pages.dev/"
-                target="_blank"
-              >
-                storybook
+              Check Salt DS's{" "}
+              <Link href="https://www.saltdesignsystem.com" target="_blank">
+                website
               </Link>{" "}
               and{" "}
               <Link
-                href="https://github.com/jpmorganchase/uitk"
+                href="https://github.com/jpmorganchase/salt-ds"
                 target="_blank"
               >
                 GitHub
@@ -58,7 +55,7 @@ const App = (): JSX.Element => {
           </Card>
         </Panel>
       </div>
-    </ToolkitProvider>
+    </SaltProvider>
   );
 };
 
