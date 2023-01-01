@@ -46,7 +46,7 @@ export const Nav = ({
       <Tabstrip
         data-index={1}
         data-priority={2}
-        onChange={(tabIndex: number) => {
+        onActiveChange={(tabIndex: number) => {
           console.log("Tab selected", tabIndex);
         }}
       >
