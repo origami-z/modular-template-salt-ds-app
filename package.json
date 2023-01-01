@@ -1,6 +1,6 @@
 {
-  "name": "modular-template-uitk-app",
-  "version": "0.0.10",
+  "name": "modular-template-salt-ds-app",
+  "version": "1.0.0-alpha.1",
   "exports": {
     "./package.json": "./package.json"
   },
@@ -9,10 +9,10 @@
     "templateType": "app"
   },
   "dependencies": {
-    "@jpmorganchase/uitk-core": "latest",
-    "@jpmorganchase/uitk-icons": "latest",
-    "@jpmorganchase/uitk-lab": "latest",
-    "@jpmorganchase/uitk-theme": "latest"
+    "@salt-ds/core": "latest",
+    "@salt-ds/icons": "latest",
+    "@salt-ds/lab": "latest",
+    "@salt-ds/theme": "latest"
   },
   "license": "Apache-2.0",
   "files": [
@@ -20,5 +20,5 @@
     "public",
     "src"
   ],
-  "repository": "https://github.com/origami-z/modular-template-uitk-app.git"
+  "repository": "https://github.com/origami-z/modular-template-salt-ds-app.git"
 }
